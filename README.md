@@ -1,0 +1,1 @@
+This project was developed in collaboration with a friend, utilizing Angular for the frontend, ASP.NET Core for the backend, and MS SQL as the database. My primary responsibilities included backend development and database management, with occasional contributions to the fron

@@ -1,0 +1,54 @@
+<div class="modal-container" id="modal">
+    <div class="modal-header">
+        <span>
+            Book Now
+        </span>
+        <h5 *ngIf="errorMessage">{{errorMessage}}</h5>
+        <button class="close-modal-btn" (click)="closeModal()">╳</button>
+    </div>
+    <div class="modal-header" *ngIf="errorMessage" style="border-radius: 0;">
+        <h5>{{errorMessage}}</h5>
+    </div>
+    <div class="modal-body">
+        <form [formGroup]="bookingForm" (ngSubmit)="onSubmit()">
+            <div class="fullname_email flex">
+                <div class="form-group">
+                    <input type="text" id="fullName" formControlName="fullName" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" formControlName="email" placeholder="Email" required>
+                </div>
+            </div>
+            <div class="phone_cartype flex">
+                <div class="form-group">
+                    <input type="text" id="phone" formControlName="phone" placeholder="Phone" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="car" formControlName="car" [value]="sellectedCar.make + ' ' + sellectedCar.model">
+                </div>
+            </div>
+            <div class="pickup_date_location flex">
+                <div class="form-group">
+                    <input type="text" id="pickupLocation" formControlName="pickupLocation" [value]="isAirport ? 'Airport' : 'City'">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="pickupDate" formControlName="pickupDate" placeholder="Pick-Up Date">
+                </div>
+            </div>
+            <div class="dropoff_location_date flex">
+                <div class="form-group">
+                    <input type="text" id="driver" formControlName="driver" [value]="isDriver ? 'Yes' : 'No'">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="returnDate" formControlName="returnDate" placeholder="Drop-Off Date">
+                </div>
+            </div>
+            <div class="form-group for_textarea">
+                <textarea id="additionalNote" formControlName="additionalNote" rows="3" placeholder="Write any additional notes..."></textarea>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="submit-btn">Rent Now</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+$primary-color: #FF3437;
+$secondary-color: #0F0F0F;
+$text-color: #FFFFFF;
+
+app-slider,
+app-about-us,
+app-filter,
+app-car-types {
+    width: 100%;
+}
+
+.slider-container {
+    position: relative;
+    text-align: center;
+    color: #fff;
+  
+  .slider-image {
+    width: 100%;
+    height: auto;
+    filter: brightness(50%);
+  }
+  
+  .slider-content {
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

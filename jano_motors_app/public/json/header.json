@@ -1,0 +1,22 @@
+{
+    "nav-link-en": [
+      { "name": "Home", "url": "/home" },
+      { "name": "About", "url": "/about" },
+      { "name": "Cars", "url": "/cars-listing" }
+    ],
+    "nav-link-geo": [
+      { "name": "მთავარი", "url": "/home" },
+      { "name": "ჩვენს შესახებ", "url": "/about" },
+      { "name": "მანქანები", "url": "/cars-listing" }
+    ],
+    "adm": [
+      { "name": "Admin", "url": "/admin" }
+    ],
+    "contact-en" : [
+        { "call": "call", "B_Now": "Book Now" }
+    ],
+    "contact-geo" : [
+        { "call": "დარეკე", "B_Now": "დაჯავშნე ახლა" }
+    ]
+  }
+  

@@ -1,0 +1,71 @@
+{
+    "slider-en": [
+        {
+            "title": "Rental Car",
+            "period": "day",
+            "btn": "View Details"
+        }
+    ],
+    "slider-geo": [
+        {
+            "title": "ქირავდება მანქანა",
+            "period": "დღე",
+            "btn": "დეტალურად"
+        }
+    ],
+    "about-us-en": [
+        {
+            "heading": "A Car Rental Company",
+            "description": "Car rental company offering economy and luxury vehicles for daily or weekly rentals. Choose from a wide range of cars for your needs.",
+            "btn": "View Details"
+        },
+        {"type": "Economy Cars" },
+        {"type": "Sport Cars"},
+        {"type": "Luxury Cars"}
+        
+    ],
+    "about-us-geo": [
+        {
+            "heading": "მანქანის გაქირავების კომპანია",
+            "description": "მანქანის გაქირავების კომპანია, რომელიც შეთანხმებით გთავაზობთ ეკონომიურ, სპორტულ და ლუქს კლასის მანქანებს დღიური ქირაობისთვის. აირჩიეთ განთავსებული მანქანა თქვენი საჭიროებებისთვის.",
+            "btn": "დეტალურად"
+        },
+        {"type": "ეკონომიური კლასის მანქანები" },
+        {"type": "სპორტული კლასის მანქანები"},
+        {"type": "ლუქს კლასის მანქანები"}
+    ],
+    "filter-en": [
+        {
+            "preHeading": "RENT NOW",
+            "heading": "Find a Car",
+            "filterHeading": "Choose Car Type",
+            "btn": "Search Now"
+        }
+    ],
+    "filter-geo": [
+        {
+            "preHeading": "იქირავე ახლა",
+            "heading": "მოძებნეთ მანქანა",
+            "filterHeading": "აირჩიეთ მანქანის ტიპი",
+            "btn": "ძებნა"
+        }
+    ],
+    "types-en": [
+        {
+            "preHeading": "CATEGORIES",
+            "heading": "Rental Car Types",
+            "carType1": "Sedan",
+            "carType2": "Jeep",
+            "carType3": "Sports Car"
+        }
+    ],
+    "types-geo": [
+        {
+            "preHeading": "კატეგორიები",
+            "heading": "გასაქირავებელი მანქანების ტიპები",
+            "carType1": "სედანი",
+            "carType2": "ჯიპი",
+            "carType3": "სპორტული მანქანა"
+        }
+    ]
+}

@@ -1,0 +1,63 @@
+{
+    "about-info-en": [
+        {
+            "emailTitle": "Email us",
+            "addressTitle": "Our Address",
+            "phoneTitle": "Call us"
+        }
+    ],
+    "about-info-geo": [
+        {
+            "emailTitle": "მოგვწერეთ",
+            "addressTitle": "ჩვენი მისამართი",
+            "phoneTitle": "დაგვიკავშირდით"
+        }
+    ],
+    "about-section-en": [
+        {
+            "headingNormal": "We Are More Than",
+            "headingRed": "A Car Rental Company",
+            "description": "Car repair quisque sodales dui ut varius vestibulum donec tortor turpis porttitor tellus eu euismod nisl massa rutrum ut. In the nisl a viverra facilisis lorem mauris vehicula nisl nullam in laoreet."
+        },
+        { "option": "Economy Cars" },
+        { "option": "Sport Cars" },
+        { "option": "Luxury Cars" }
+    ],
+
+    "about-section-geo": [
+        {
+            "headingNormal": "ჩვენ ვართ მეტი, ვიდრე",
+            "headingRed": "მანქანის გაქირავების კომპანია",
+            "description": "მანქანის გაქირავების კომპანია, რომელიც შეთანხმებით გთავაზობთ ეკონომიურ, სპორტულ და ლუქს კლასის მანქანებს დღიური ქირაობისთვის. აირჩიეთ განთავსებული მანქანა თქვენი საჭიროებებისთვის."
+        },
+        { "option": "ეკონომიური კლასის მანქანები" },
+        { "option": "სპორტული კლასის მანქანები" },
+        { "option": "ლუქს კლასის მანქანები" }
+    ],
+
+    "contact-section-en": [
+        {
+            "heading1": "Get in Thouch",
+            "heading2": "Locations",
+            "btn": "Send Message",
+            "placeholder1": "Your Name",
+            "placeholder2": "Your Email",
+            "placeholder3": "Your Phone",
+            "placeholder4": "Subject",
+            "placeholder5": "Your Message"
+        }
+    ],
+
+    "contact-section-geo": [
+        {
+            "heading1": "დაგვიკავშირდით",
+            "heading2": "ლოკაცია",
+            "btn": "გააგზავნეთ მესიჯი",
+            "placeholder1": "თქვენი სახელი",
+            "placeholder2": "თქვენი ელ-ფოსტა",
+            "placeholder3": "თქვენი ნომერი",
+            "placeholder4": "მიზეზი",
+            "placeholder5": "თქვენი შეტყობინება"
+        }
+    ]
+}

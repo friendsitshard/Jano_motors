@@ -1,0 +1,91 @@
+$primary-color: #ff3437;
+$secondary-color: #0f0f0f;
+$text-color: #ffffff;
+
+.car-types {
+  background-color: #121212;
+  color: #fff;
+  padding: 50px 50px;
+  text-align: center;
+
+  .starter {
+    width: 40px;
+    rotate: 90deg;
+    margin-bottom: 40px;
+    border: 1px solid $primary-color;
+  }
+
+  h4, h6 {
+    color: $primary-color;
+  }
+  
+  .car-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+
+    .car-card {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      height: 225px;
+
+      .content {
+        border-radius: 25px;
+        text-align: center;
+      
+        img {
+          width: 100%;
+          border-radius: 25px;
+
+          @media (max-width: 530px) {
+            border-radius: 10px;
+          }
+        }
+      
+        h3 {
+          position: absolute;
+          margin-top: 15px;
+          margin-left: 15px;
+          color: #ff4141;
+
+          @media (max-width: 530px) {
+            font-size: 0.7rem;
+            margin-top: 5px;
+            margin-left: 5px;
+          }
+        }
+      }
+
+      .svg-container {
+        position: absolute;
+        align-self: flex-start;
+        background-color: #2B2B2B;
+        width: fit-content;
+        height: fit-content;
+        margin-top: 9.15%;
+        padding: 6px;
+        border-radius: 0 25px 25px 25px;    
+        
+        @media (max-width: 530px) {
+          margin-top: 7.59%;
+          border-radius: 0 5px 5px 5px;
+          padding: 1px 4px;
+
+          svg{
+            width: 10px;
+            height: 10px; 
+          }
+        }
+      }
+
+      @media (max-width: 530px) {
+        width: 100%;
+        height: 150px;
+        border-radius: 15px;
+      }
+    }
+  }
+  
+}
+

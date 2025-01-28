@@ -1,0 +1,168 @@
+$primary-color: #ff3437;
+$secondary-color: #0f0f0f;
+$text-color: #ffffff;
+
+.filter {
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 72%;
+    z-index: -1000;
+
+    @media (max-width: 530px) {
+      height: 40%;
+    }
+  }
+  .filter-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5.6rem;
+    background-size: cover;
+    color: white;
+    text-align: center;
+
+    .starter {
+      width: 40px;
+      rotate: 90deg;
+      margin-top: -20px;  
+      margin-bottom: 20px;
+      border: 1px solid $primary-color;
+
+      @media (max-width: 530px) {
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+    }
+
+    h4, h6 {
+      color: $primary-color;
+    }
+
+    .title {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .filter-form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      background-color: $secondary-color;
+      padding: 25px;
+      border-radius: 100px;
+
+      .custom-select {
+        display: flex;
+        position: relative;
+        padding: 2px;
+
+        select {
+          appearance: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          width: 100%;
+          padding-right: 2rem;
+          color: $text-color;
+          border: none;
+          background: none;
+
+          option {
+            color: $secondary-color;
+          }
+        }
+
+        &::after {
+          content: "▼"; 
+          color: $primary-color;
+          position: absolute;
+          right: 5px;
+          top: 50%;
+          transform: translateY(-50%);
+          pointer-events: none;
+        }
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+
+        select,
+        input {
+          padding: 0.5rem;
+          border-radius: 4px;
+          background: none;
+          font-size: 1rem;
+          color: $text-color;
+          border: none;
+        }
+
+        select::-ms-expand {
+          display: none;
+        }
+
+        select::after {
+          content: "▼";
+          columns: $primary-color;
+          position: absolute;
+          right: 0.5px;
+          pointer-events: none;
+        }
+
+        input::-webkit-calendar-picker-indicator {
+          filter: invert(100%) brightness(50%) sepia(100%) saturate(10000%);
+        }
+      }
+
+      hr {
+        opacity: 0.8;
+        margin: 5px;
+      }
+
+      .btn {
+        background-color: $primary-color;
+        padding: 12px 20px;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 50px;
+
+        &:hover {
+          box-shadow: $primary-color 0px 0px 20px;
+        }
+      }
+    }
+
+    @media (max-width: 530px) {
+      padding: 2rem;
+
+      h6 {
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+      }
+
+      .filter-form {
+        padding: 1rem;
+        gap: 0.5rem;
+
+        .form-group {
+          select,
+          input {
+            padding: 0.3rem;
+            font-size: 0.8rem;
+          }
+        }
+
+        .btn {
+          padding: 10px 15px;
+        }
+      }
+  }
+}
+}

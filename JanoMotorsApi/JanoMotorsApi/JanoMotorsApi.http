@@ -1,0 +1,6 @@
+@JanoMotorsApi_HostAddress = http://localhost:5283
+
+GET {{JanoMotorsApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

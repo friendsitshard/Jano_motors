@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "email": "john.doe@example.com",
+      "password": "password123",
+      "token": "abcd1234@1"
+    },
+    {
+      "email": "jane.smith@example.com",
+      "password": "password456",
+      "token": "efgh5678@2"
+    }
+  ],
+  "userInfos": [
+    {
+      "id": 1,
+      "email": "john.doe@example.com",
+      "firstName": "John",
+      "lastName": "Doe",
+      "dateOfBirth": "",
+      "profileImage": "Images/profile.jpg",
+      "isVerified": true
+    },
+    {
+      "id": 2,
+      "email": "jane.smith@example.com",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "dateOfBirth": "1992-02-02T00:00:00.000Z",
+      "profileImage": "Images/profile.jpg",
+      "isVerified": false
+    }
+  ],
+  "userDocs": [
+    {
+      "id": 1,
+      "userId": 1,
+      "type": "passport_front",
+      "docImage": "Images/doc1.jpg"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "type": "driver_license_front",
+      "docImage": "Images/doc2.jpg"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "type": "passport_back",
+      "docImage": "Images/doc1.jpg"
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "type": "driver_license_back",
+      "docImage": "Images/doc2.jpg"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #121212;
+
+  .login-image {
+    flex: 1;
+    background-color: #ff1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    box-shadow: 8px 0 20px #ff1e1e;
+
+
+    img {
+      max-width: 60%;
+      height: auto;
+    }
+  }
+
+  .login-form {
+    margin-top: 100px;
+    flex: 0.5;
+    background-color: #1e1e1e;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    
+
+    h2 {
+      width: 100%;
+      color: white;
+      display: inline-block;
+      text-align: center;
+    }
+    
+    hr {
+      border: 2px solid #ff1e1e;
+      width: 50%;
+      margin-bottom: 1.5rem;
+    }
+
+    form {
+      padding-top: 0.5rem;
+      width: 60%;
+      margin-inline: auto;
+      .input-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+
+        label {
+          color: #cccccc;
+          font-size: 0.9rem;
+          margin-bottom: 0.5rem;
+        }
+
+        input {
+          padding: 0.75rem;
+          border: 1px solid #333;
+          background-color: #222;
+          color: white;
+          border-radius: 5px;
+
+          &:focus {
+            outline: none;
+            border-color: #ff1e1e;
+          }
+        }
+      }
+
+      .login-btn {
+        width: 100%;
+        padding: 0.75rem;
+        background-color: #ff1e1e;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: bold;
+
+
+        &:hover {
+          background-color: #e01919;
+        }
+      }
+    }
+
+    .login-links {
+      margin-top: 1rem;
+      text-align: center;
+
+      a {
+        color: white;
+        text-decoration: none;
+
+        &:nth-child(1):hover {
+          text-decoration: underline;
+        }
+
+        strong {
+          color: #ff1e1e;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      span {
+        color: #ccc;
+        margin: 0 0.5rem;
+      }
+    }
+  }
+}

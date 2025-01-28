@@ -1,0 +1,313 @@
+$primary-color: #FF3437;
+$secondary-color: #0F0F0F;
+$text-color: #FFFFFF;
+
+.profile-page {
+  display: flex;
+  color: #ffffff;
+
+  .sidebar {
+    width: 25%;
+    padding: 50px;
+
+    .profile-card {
+      text-align: center;
+      background: #0F0F0F;
+      border-radius: 20px;
+      padding: 20px;
+
+      .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+
+        &.unverified {
+          border: 2px solid #d32f2f;
+        }
+        &.verified {
+          border: 2px solid #00B74A;
+        }
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        color: #FFFFFF;
+      }
+
+      h5 {
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+        color: #808080;
+      }
+
+      .menu {
+        list-style: none;
+        padding: 0;
+
+        li {
+          padding: 10px;
+          margin-bottom: 10px;
+          background: #292929;
+          cursor: pointer;
+          border-radius: 50px;
+          text-align: start;
+
+          span {
+            margin-right: 10px;
+          }
+
+          &.active {
+            background: #d32f2f;
+          }
+
+          &:hover {
+            background: #d32f2f;
+            box-shadow: 0 0 20px 0 #d32f2f;
+            padding: 15px;
+          }
+
+          &.logout{
+            margin-top: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    width: 75%;
+    padding: 20px;
+
+    .header {
+      h2 {
+        font-size: 2rem;
+        text-align: center;
+        color: #a92222;
+      }
+
+      hr {
+        border: 1px solid #a92222;
+      }
+    }
+
+    .reservations {
+      margin-bottom: 40px;
+
+      h3 {
+        width: 85%;
+        margin-inline: auto;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        color: #ffffff;
+      }
+
+      table {
+        width: 90%;
+        margin-inline: auto;
+        border-collapse: collapse;
+        margin-bottom: 10px;
+
+        th,
+        td {
+          padding: 10px;
+          text-align: left;
+          border-bottom: 1px solid #b9b9b9;
+        }
+
+        th {
+          text-align: center;
+          color: #b9b9b9;
+        }
+
+        td {
+          color: #ffffff;
+          
+          span {
+            display: block;
+            width: 100px;
+            height: 20px;
+            border-radius: 50px;
+            text-align: center;
+          
+            &.active {
+              background-color: #00B74A;
+            }
+            &.cancelled {
+              background: #F93154;
+            }
+            &.complete {
+              background-color: #BDBDBD;
+            }
+            &.scheduled {
+              background-color: #FFA900;
+            }
+          }
+        }
+
+      }
+
+      .view-all {
+        width: 90%;
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        gap: 10px;
+        color: #d32f2f;
+        text-decoration: none;
+        line-height: 49px;
+
+        span {
+          display: flex;
+          align-items: center;
+          margin-right: 5px;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .favorites {
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      .car-cards {
+        display: flex;
+        gap: 20px;
+
+        .car-card {
+          background: #0F0F0F;
+        //   padding: 20px;
+          border-radius: 10px;
+          text-align: center;
+          width: 250px;
+
+          img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+          }
+
+          h4 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+          }
+          .detail-info {
+            background-color: $secondary-color;
+            width: 80%;
+            padding: 10px;
+    
+            display: flex;
+            flex-direction: column;
+
+            .detail {
+                width: 100%;
+                height: 40px;
+                display: flex;
+                justify-content: space-between;
+              
+                .options {
+                  display: flex;
+                  gap: 5px;
+
+                  .icon {
+                      width: 40px;
+                      height: 40px;
+                      margin-block: auto;
+                      line-height: 45px;
+                      text-align: center;
+                  }
+                  .text {
+                      margin: 0px;
+                      padding: 0px;
+                      line-height: 36px;
+                  }
+                  .check-icon{
+                      line-height: 42px;
+                      input {
+                          appearance: none;
+                          margin-right: 5px;
+                          width: 13px;
+                          height: 13px;
+                          border: 1px solid $primary-color;
+                          border-radius: 50%;
+                          outline: none;
+                          cursor: pointer;
+                          position: relative;
+              
+                          &:checked {
+                            background-color: $primary-color;
+              
+                            &::after {
+                              content: "✔";
+                              color: $text-color;
+                              font-size: 10px;
+                              position: absolute;
+                              top: 50%;
+                              left: 50%;
+                              transform: translate(-50%, -50%);
+                            }
+                          }
+                        }
+                  }
+                }
+                .response {
+                  margin: 0px;
+                  padding: 0px;
+                  line-height: 36px;
+                }
+            }
+          }
+
+          .price {
+            display: flex;
+            justify-content: space-around;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-block: 20px;
+
+            :first-child {
+              color: #d32f2f;
+              span {
+                color: #ffffff;
+              }
+            }
+
+            .details-btn {
+              display: inline-block;
+              padding: 10px 15px;
+              background: #d32f2f;
+              color: #fff;
+              border: none;
+              border-radius: 25px;
+              cursor: pointer;
+
+              &:hover {
+                background: #a92222;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 530px) {
+    flex-direction: column;
+    
+    .sidebar {
+      width: 75%;
+      padding: 50px;
+    };
+
+    .content {
+      width: 80%;
+      margin-inline: auto;
+    }
+  }
+}

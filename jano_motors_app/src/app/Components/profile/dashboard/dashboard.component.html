@@ -1,0 +1,22 @@
+<div class="header">
+    <h2>Dashboard</h2>
+    <hr />
+</div>
+
+  <section class="reservations">
+    <h3>Notifications</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Message</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let notification of notifications.newMessages">
+          <td>{{notification.text}}</td>
+          <td><span [ngClass]="notification.status" (click)="fixAlert(notification.text)">See Details</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>

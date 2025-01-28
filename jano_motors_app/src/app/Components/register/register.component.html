@@ -1,0 +1,32 @@
+<div class="registration-container">
+  <div class="registration-image">
+    <img src="Images/login-slider.png" alt="Car Image" />
+  </div>
+  <div class="registration-form">
+    <h2>{{currentRegisterInfo.heading}}</h2>
+  <hr>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div class="input-group">
+        <label for="email">{{currentRegisterInfo.emailSubHeading}}</label>
+        <input type="email" id="email" placeholder="Enter your email" formControlName="email"/>
+      </div>
+      <div class="input-group">
+        <label for="password">{{currentRegisterInfo.passwordSubHeading}}</label>
+        <input type="password" id="password" placeholder="Enter your password" formControlName="password"/>
+      </div>
+      <div class="input-group">
+        <label for="confirm-password">{{currentRegisterInfo.repeatPasswordSubHeading}}</label>
+        <input
+          type="password"
+          id="confirm-password"
+          placeholder="Confirm your password"
+        />
+      </div>
+      <button type="submit" class="register-btn">{{currentRegisterInfo.btn}}</button>
+    </form>
+    <div class="registration-links">
+      <span>{{currentRegisterInfo.preLogin}}</span>
+      <a href="/login">{{currentRegisterInfo.Login}}</a>
+    </div>
+  </div>
+</div>

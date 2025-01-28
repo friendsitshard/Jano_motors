@@ -1,0 +1,59 @@
+{
+    "listing-filter-en": [
+        {
+"btn": "Clear All",
+        "heading1": "Select Brand",
+        "heading2": "Trasmission",
+        "heading3": "Car Type"}
+    ],
+    "listing-filter-geo": [
+        {"btn": "გაასუფთავე ყველა",
+        "heading1": "ბრენდი",
+        "heading2": "ტრანსმისია",
+        "heading3": "მანქანის ტიპი"}
+    ],
+    "listing-cart-en": [
+        {
+        "btn1": "Details",
+        "btn2": "Book Now",
+        "period": "day",
+        "label1": "Passenger",
+        "label2": "Transmission",
+        "label3": "Year",
+        "label4": "Horse Power",
+        "label5": "Engine Type",
+        "label6": "Driver",
+        "label7": "Airport Pick Up"
+    }
+    ],
+    "listing-cart-geo": [
+        {
+        "btn1": "დეტალები",
+        "btn2": "დაჯავშნა",
+        "period": "დღე",
+        "label1": "მგზავრები",
+        "label2": "ტრანსმისია",
+        "label3": "წელი",
+        "label4": "ცხენის ძალა",
+        "label5": "ძრავის ტიპი",
+        "label6": "მძღოლი",
+        "label7": "აეროპორტში აყვანა"
+        }
+    ],
+    "about-car-details-en": [
+        {
+            "description": "Get best cars for rent in Georgia. We offer sport, offroad and luxury cars for daily rent. Choose the car that suits your needs.",
+            "heading1": "Premium Class Cars",
+            "heading2": "Sports Cars",
+            "heading3": "Offroad Cars"
+        }
+    ],
+    "about-car-details-geo": [
+        {
+            "description": "მიიღეს საუკეთესო მანქანების გაქირავების სერვისი საქართველოში. ჩვენ გთავაზობთ სპორტული, ოფროადის და ლუქს კლასის მანქანებს დღიურად. აირჩიეთ მანქანა რომელიც ერგება თქვენს საჭიროებებს.",
+            "heading1": "პრემიუმ კლასის მანქანები",
+            "heading2": "სპორტული კლასის მანქანები",
+            "heading3": "ოფროადის მანქანები"
+        }
+    ]
+}

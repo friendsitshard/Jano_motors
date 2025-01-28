@@ -1,0 +1,221 @@
+$primary-color: #ff3437;
+$hover-color: #ff3700c8;
+$text-color: #fff;
+$secondary-text-color: #bbb;
+$bg-hover: #2c2c2c;
+
+.container {
+  width: 90%;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    border-bottom: 1px solid $primary-color;
+    padding-bottom: 20px;
+    text-align: center;
+    color: $primary-color;
+    margin-bottom: 50px;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+  }
+
+  .form-group {
+    width: 100%;
+    margin-bottom: 25px;
+
+    img {
+      width: 300px;
+      height: 300px;
+      border-radius: 5%;
+      margin: 10px auto;
+      display: block;
+    } 
+    &.document {
+      width: 50%;
+    }
+  }
+
+  .form-group 
+    input[type="text"],
+    input[type="file"] {
+    height: 40px;
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #1a1a1a;
+    color: $text-color;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+
+    &.ng-invalid {
+        border: 1px solid $primary-color;
+    }
+    &.ng-valid {
+        border: 1px solid #00ff00;
+    }
+
+    &:focus {
+      background-color: $bg-hover;
+      border-color: orange;
+    }
+
+    button {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      background-color: transparent;
+      border: none;
+      color: $text-color;
+      cursor: pointer;
+
+      &:hover {
+        color: lighten($primary-color, 20%);
+      }
+    }
+  }
+
+  input[type="file"] {
+    width: 100%;
+  }
+
+  .change-password {
+    text-align: center;
+    margin-top: 40px;
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 18px;
+      color: $primary-color;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      cursor: pointer;
+    }
+
+    .password_inputs {
+      display: flex;
+      justify-content: space-between;
+      gap: 48px;
+      width: 100%;
+
+      .password-input {
+        width: 80%;
+        position: relative;
+        margin-bottom: 15px;
+
+        label {
+          text-align: left;
+        }
+
+        .input-box {
+          display: flex;
+          border: 1px solid $primary-color;
+          border-radius: 15px;
+
+          svg {
+            margin: auto 15px;
+            color: $primary-color;
+            cursor: pointer;
+          }
+        }
+        .input-box input {
+            border-radius: 15px;
+          }
+
+        button {
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          transform: translateY(-50%);
+          background-color: transparent;
+          border: none;
+          color: $text-color;
+          cursor: pointer;
+
+          &:hover {
+            color: lighten($primary-color, 20%);
+          }
+        }
+      }
+    }
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: lighten($text-color, 10%);
+  }
+
+  button {
+    width: 100%;
+    height: 64px;
+    border: none;
+    border-radius: 15px;
+    background-color: $primary-color;
+    color: $text-color;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+  
+  input[type="password"],
+  input[type="text"] {
+    height: 64px;
+    width: 100%;
+    padding: 12px 16px;
+    border: none;
+    background-color: transparent;
+    color: $text-color;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+
+    &:focus {
+      background-color: $bg-hover;
+      border-color: $hover-color;
+    }
+  }
+}
+
+#loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid $primary-color;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

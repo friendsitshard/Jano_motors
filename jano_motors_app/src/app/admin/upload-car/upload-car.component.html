@@ -1,0 +1,38 @@
+<h1>AQ TVIRTAV MANQANAAAAS</h1>
+<form [formGroup]="carForm" (submit)="onSubmit()">
+    <label for="make">Make:</label>
+    <input type="text" id="make" formControlName="make" required>
+    
+    <label for="model">Model:</label>
+    <input type="text" id="model" formControlName="model" required>
+    
+    <label for="year">Year:</label>
+    <input type="number" id="year" formControlName="year" required>
+    
+    <label for="transmission">Transmission:</label>
+    <input type="text" id="transmission" formControlName="transmission" required>
+    
+    <label for="passengers">Passengers:</label>
+    <input type="number" id="passengers" formControlName="passengers" required>
+    
+    <label for="dailyPrice">Daily Price:</label>
+    <input type="number" id="dailyPrice" formControlName="dailyPrice" required>
+    
+    <label for="horsePower">Horse Power:</label>
+    <input type="number" id="horsePower" formControlName="horsePower" required>
+    
+    <label for="engineType">Engine Type:</label>
+    <input type="text" id="engineType" formControlName="engineType" required>
+    
+    <label for="driverPrice">Driver Price:</label>
+    <input type="number" id="driverPrice" formControlName="driverPrice">
+    
+    <label for="airportPrice">Airport Price:</label>
+    <input type="number" id="airportPrice" formControlName="airportPrice">
+    
+    <label for="mainImage">Main Image FILE:</label>
+    <input type="file" id="mainImage" (change)="onFileSelected($event)" required>
+    
+    <button type="submit">Submit</button>
+</form>
+

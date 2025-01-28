@@ -1,0 +1,31 @@
+<app-admin-header></app-admin-header>
+
+<table>
+    <thead>
+        <tr>
+            <th>Booking ID</th>
+            <th>Customer ID</th>
+            <th>Car ID</th>
+            <th>Booking StartDate</th>
+            <th>Booking EndDate</th>
+            <th>Booking TotalPrice</th>
+            <th>Booking Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let booking of bookings">
+            <td>{{ booking.id }}</td>
+            <td>{{ booking.userId }}</td>
+            <td>{{ booking.carId }}</td>
+            <td>{{ booking.startDate }}</td>
+            <td>{{ booking.endDate }}</td>
+            <td>{{ booking.totalPrice }}</td>
+            <td>{{ booking.status }}</td>
+            <td>
+                <button (click)="onEditBooking(booking.id)">Edit</button>
+                <button (click)="onDeleteBooking(booking.id)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

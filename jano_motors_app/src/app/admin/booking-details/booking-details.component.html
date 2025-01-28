@@ -1,0 +1,177 @@
+<div class="container">
+    <div class="booking-details">
+        <div class="booking-details__header">
+            <h1>Booking Details</h1>
+            <button (click)="doit()">DO IT</button>
+        </div>
+        <div class="booking-details__content">
+            <div class="booking-details__content__item">
+                <div class="booking-details__content__item__label">
+                    <span>Booking ID</span>
+                </div>
+                <div class="booking-details__content__item__value">
+                    <span>{{ booking?.id }}</span>
+                </div>
+            </div>
+            <div class="booking-details__content__item">
+                <div class="booking-details__content__item__label">
+                    <span>Customer Name</span>
+                </div>
+                <div class="booking-details__content__item__value">
+                    <span>{{ user?.Firstname }} {{ user?.Lastname }}</span>
+                </div>
+            </div>
+            <div class="booking-details__content__item">
+                <div class="booking-details__content__item__label">
+                    <span>Customer Email</span>
+                </div>
+                <div class="booking-details__content__item__value">
+                    <span>{{ user?.email }}</span>
+                </div>
+            </div>
+            <div class="booking-details__content__item">
+                <div class="booking-details__content__item__label">
+                    <span>Customer phone</span>
+                </div>
+                <div class="booking-details__content__item__value">
+                    <span>{{ user?.PhoneNumber }}</span>
+                </div>
+            </div>
+        </div>
+        <div class="booking_details__images_section">
+            <div class="booking_details__images_section__header">
+                <h2>Images</h2>
+            </div>
+            <div class="booking_details__images_section__content">
+                <div class="booking_details__images_section__content__item">
+                    <span>IDFront</span>
+                    <img [src]="user?.IDFront" alt="image">
+                </div>
+            </div>
+            <div class="booking_details__images_section__content">
+                <div class="booking_details__images_section__content__item">
+                    <span>IDBack</span>
+                    <img [src]="user?.IDBack" alt="image">
+                </div>
+            </div>
+            <div class="booking_details__images_section__content">
+                <div class="booking_details__images_section__content__item">
+                    <span>LicenseFront</span>
+                    <img [src]="user?.LicenseFront" alt="image">
+                </div>
+            </div>
+            <div class="booking_details__images_section__content">
+                <div class="booking_details__images_section__content__item">
+                    <span>LicenseBack</span>
+                    <img [src]="user?.LicenseBack" alt="image">
+                </div>
+            </div>
+
+            <h1>PAYMENT IMAGES</h1>
+            <div class="booking_details__images_section__content">
+                <div class="booking_details__images_section__content__item">
+                    <span>Invoice</span>
+                    <img [src]="booking?.invoice" alt="image">
+                </div>
+            </div>
+            <div class="booking_details__images_section__content">
+                <div class="booking_details__images_section__content__item">
+                    <span>Check</span>
+                    <img [src]="booking?.payment" alt="image">
+                </div>
+            </div>
+        </div>
+        <div class="booking_details__car_section">
+            <div class="booking_details__car_section__header">
+                <h2>Car</h2>
+            </div>
+            <div class="booking_details__car_section__content">
+                <div class="booking_details__car_section__content__item">
+                    <span>Car ID</span>
+                    <span>{{ car?.id }}</span>
+                </div>
+                <div class="booking_details__car_section__content__item">
+                    <span>Car Make</span>
+                    <span>{{ car?.make }}</span>
+                </div>
+                <div class="booking_details__car_section__content__item">
+                    <span>Car Model</span>
+                    <span>{{ car?.model }}</span>
+                </div>
+                <div class="booking_details__car_section__content__item">
+                    <span>Car Year</span>
+                    <span>{{ car?.year }}</span>
+                </div>
+                <div class="booking_details__car_section__content__item">
+                    <span>Car Passengers</span>
+                    <span>{{ car?.passengers }}</span>
+                </div>
+                <div class="booking_details__car_section__content__item">
+                    <span>Car Transmission</span>
+                    <span>{{ car?.transmission }}</span>
+                </div>
+                <div class="booking_details__car_section__content__item">
+                    <span>Car Daily Price</span>
+                    <span>{{ car?.dailyPrice }}</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="booking_details_info">
+            <div class="booking_details_info__header">
+                <h2>Booking Info</h2>
+            </div>
+            <div class="booking_details_info__content">
+                <div class="booking_details_info__content__item">
+                    <span>Booking ID</span>
+                    <span>{{ booking?.id }}</span>
+                </div>
+                <div class="booking_details_info__content__item">
+                    <span>Booking Status</span>
+                    <span>{{ booking?.status }}</span>
+                </div>
+                <div class="booking_details_info__content__item">
+                    <span>Start Date</span>
+                    <span>{{ booking?.startDate }}</span>
+                </div>
+                <div class="booking_details_info__content__item">
+                    <span>End Date</span>
+                    <span>{{ booking?.endDate }}</span>
+                </div>
+                <div class="booking_details_info__content__item">
+                    <span>Total Price</span>
+                    <span>{{ booking?.totalPrice }}</span>
+                </div>
+                <div class="booking_details_info__content__item">
+                    <span>Total Days</span>
+                    <span>{{ booking?.bookingDays }}</span>
+                </div>
+                <div class="booking_details_info__content__item">
+                    <span>Airport Service</span>
+                    <span>{{ booking?.airportService }}</span>
+                </div>
+                <div class="booking_details_info__content__item">
+                    <span>Driver Service</span>
+                    <span>{{ booking?.driverService }}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="booking_details__buttons">
+            <button (click)="approveBooking(booking?.id)">Approve</button>
+            <button (click)="rejectBooking(booking?.id)">Reject</button>
+        </div>
+
+        <div class="booking_details__form">
+            <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+                <div class="form-group">
+                    <label for="invoice">Invoice</label>
+                    <input type="file" id="invoice" (change)="invoice($event)" />
+                </div>
+                <div class="form-group">
+                    <button type="submit">Upload</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

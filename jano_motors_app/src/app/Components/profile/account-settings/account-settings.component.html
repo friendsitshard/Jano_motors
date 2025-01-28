@@ -1,0 +1,124 @@
+<div *ngIf="accountForm; else loading">
+  <form class="container" [formGroup]="accountForm" (ngSubmit)="onSubmit()">
+    <h1>Account Settings</h1>
+
+    <!-- First and Last Name -->
+    <div class="flex">
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" formControlName="firstName" />
+        <div *ngIf="isInvalid('firstName')" class="error-message">
+          First Name is required.
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" formControlName="lastName" />
+        <div *ngIf="isInvalid('lastName')" class="error-message">
+          Last Name is required.
+        </div>
+      </div>
+    </div>
+
+    <!-- Date of Birth -->
+    <div class="form-group">
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" formControlName="dateOfBirth" />
+      <div *ngIf="isInvalid('dateOfBirth')" class="error-message">
+        Date of Birth is required and must be a valid date.
+      </div>
+    </div>
+
+    <!-- Phone Number -->
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" formControlName="phoneNumber" />
+      <div *ngIf="isInvalid('phoneNumber')" class="error-message">
+        Phone Number is required.
+      </div>
+    </div>
+
+    <!-- Profile Image -->
+    <div class="form-group">
+      <label for="profile">Profile Image</label>
+      <div class="custom-file-input">
+        <input type="file" id="profile" (change)="profileImage($event)"/>
+        <span>Choose a file</span>
+      </div>
+      <div *ngIf="isInvalid('idFrontImage')" class="error-message">
+        Profile Image is required.
+      </div>
+    </div>
+
+    <!-- Document Images -->
+
+    <div class="flex">
+
+    <div class="form-group document">
+      <label for="idFront">ID Front Image</label>
+      <img *ngIf="idFrontsrc" [src]="idFrontsrc" alt="ID Front Image">
+      <div class="custom-file-input">
+        <input type="file" id="idFront" (change)="idFront($event)" />
+      </div>
+      <div *ngIf="isInvalid('idFrontImage')" class="error-message">
+        ID Front Image is required.
+      </div>
+    </div>
+
+    <div class="form-group document">
+      <label for="idBack">ID Back Image</label>
+      <img *ngIf="idBacksrc" [src]="idBacksrc" alt="ID Back Image">
+      <div class="custom-file-input">
+        <input type="file" id="idBack" (change)="idBack($event)"/>
+      </div>
+      <div *ngIf="isInvalid('idBackImage')" class="error-message">
+        ID Back Image is required.
+      </div>
+    </div>
+  </div>
+  <div class="flex">
+
+    <div class="form-group document">
+      <label for="driverFront">Driver License Front Image</label>
+      <img *ngIf="driverFrontsrc" [src]="driverFrontsrc" alt="Driver License Front Image">
+      <div class="custom-file-input">
+        <input type="file" id="driverFront"  (change)="driverFront($event)"/>
+      </div>
+      <div *ngIf="isInvalid('driverLicenseFrontImage')" class="error-message">
+        Driver License Front Image is required.
+      </div>
+    </div>
+
+    <div class="form-group document">
+      <label for="driverBack">Driver License Back Image</label>
+      <img *ngIf="driverBacksrc" [src]="driverBacksrc" alt="Driver License Back Image">
+      <div class="custom-file-input">
+        <input type="file" id="driverBack"  (change)="driverBack($event)"/>
+      </div>
+      <div *ngIf="isInvalid('driverLicenseBackImage')" class="error-message">
+        Driver License Back Image is required.
+      </div>
+    </div>
+  </div>
+
+    <!-- Submit Button -->
+    <button type="submit">Save</button>
+  </form>
+</div>
+
+<!-- Loading State -->
+<ng-template #loading>
+  <div class="loading-container">
+    <p>Loading account settings...</p>
+  </div>
+</ng-template>
+
+
+
+<div class="container">
+  <div class="change-password">
+    <h1 (click)="showPasswordChange()">Change Password</h1>
+    <app-update-password *ngIf="isPasswordChangeVissible"></app-update-password>
+  </div>
+</div>

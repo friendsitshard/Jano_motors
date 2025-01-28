@@ -1,0 +1,185 @@
+<div class="about-page">
+  <!-- Top Banner Image -->
+  <div class="banner">
+    <img src="Images/about-slider.jpg" alt="Top Banner" />
+  </div>
+
+  <!-- Three Contact Information Cards -->
+  <div class="info-cards">
+    <div class="card" (click)="copyMail()">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="48px"
+        viewBox="0 -960 960 960"
+        width="48px"
+        fill="#000000"
+      >
+        <path
+          d="M140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm340-302L140-685v465h680v-465L480-462Zm0-60 336-218H145l335 218ZM140-685v-55 520-465Z"
+        />
+      </svg>
+      <h3>{{ currentInfo.emailTitle }}</h3>
+      <p>info&#64;janomotors.com</p>
+    </div>
+    <div class="card" (click)="copyAddres()">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="48px"
+        viewBox="0 -960 960 960"
+        width="48px"
+        fill="#000000"
+      >
+        <path
+          d="M480.09-490q28.91 0 49.41-20.59 20.5-20.59 20.5-49.5t-20.59-49.41q-20.59-20.5-49.5-20.5t-49.41 20.59q-20.5 20.59-20.5 49.5t20.59 49.41q20.59 20.5 49.5 20.5ZM480-159q133-121 196.5-219.5T740-552q0-117.79-75.29-192.9Q589.42-820 480-820t-184.71 75.1Q220-669.79 220-552q0 75 65 173.5T480-159Zm0 79Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"
+        />
+      </svg>
+      <h3>{{ currentInfo.addressTitle }}</h3>
+      <p>Lisi Lake</p>
+    </div>
+    <div class="card" (click)="copyNumber()">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="48px"
+        viewBox="0 -960 960 960"
+        width="48px"
+        fill="#000000"
+      >
+        <path
+          d="M795-120q-116 0-236.5-56T335-335Q232-438 176-558.5T120-795q0-19.29 12.86-32.14Q145.71-840 165-840h140q14 0 24 10t14 25l26.93 125.64Q372-665 369.5-653.5t-10.73 19.73L259-533q26 44 55 82t64 72q37 38 78 69.5t86 55.5l95-98q10-11 23.15-15 13.15-4 25.85-2l119 26q15 4 25 16.04 10 12.05 10 26.96v135q0 19.29-12.86 32.14Q814.29-120 795-120ZM229-588l81-82-23-110H180q2 42 13.5 88.5T229-588Zm369 363q41 19 89 31t93 14v-107l-103-21-79 83ZM229-588Zm369 363Z"
+        />
+      </svg>
+      <h3>{{ currentInfo.phoneTitle }}</h3>
+      <p>+995 565 77 77 77</p>
+    </div>
+  </div>
+
+  <!-- Image and Text Section -->
+  <div class="about-section">
+    <div class="text-content">
+      <h6>JANO MOTORS</h6>
+      <h1>
+        {{ currentAbout[0].headingNormal }} <br /><span>
+          {{ currentAbout[0].headingRed }}</span
+        >
+      </h1>
+      <p>
+        {{ currentAbout[0].description }}
+      </p>
+      <ul>
+        <li *ngFor="let opt of currentAbout.slice(1)">
+          <svg
+            width="26"
+            height="26"
+            viewBox="0 0 46 46"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="23" cy="23" r="23" fill="#FF3437" />
+            <g filter="url(#filter0_d_0_1)">
+              <path
+                d="M15 26.1818L19.9231 30L31 16"
+                stroke="white"
+                stroke-width="2"
+                shape-rendering="crispEdges"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_d_0_1"
+                x="10.3871"
+                y="15.3794"
+                width="25.3971"
+                height="24.0176"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dy="4" />
+                <feGaussianBlur stdDeviation="2" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="BackgroundImageFix"
+                  result="effect1_dropShadow_0_1"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_dropShadow_0_1"
+                  result="shape"
+                />
+              </filter>
+            </defs>
+          </svg>
+          {{ opt.option }}
+        </li>
+      </ul>
+    </div>
+    <div class="car-card">
+      <div class="content">
+        <img src="Images/sedan.jpeg" alt="Sedan" />
+      </div>
+
+      <div class="svg-container">
+        <svg
+          width="80"
+          height="80"
+          viewBox="0 0 90 90"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="45" cy="45" r="45" fill="#FF3437" />
+          <path
+            d="M52.0001 38.6621C52.0001 38.1099 51.5523 37.6621 51.0001 37.6621L42.0001 37.6621C41.4478 37.6621 41.0001 38.1098 41.0001 38.6621C41.0001 39.2144 41.4478 39.6621 42.0001 39.6621L50.0001 39.6621L50 47.6621C50 48.2144 50.4477 48.6621 51 48.6621C51.5523 48.6621 52 48.2144 52 47.6621L52.0001 38.6621ZM39.7071 51.3692L51.7072 39.3692L50.293 37.955L38.2929 49.955L39.7071 51.3692Z"
+            fill="white"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Form and Location Map -->
+  <div class="contact-section">
+    <div class="form">
+      <h3>{{ currentContact.heading1 }}</h3>
+      <form>
+        <input type="text" placeholder="{{ currentContact.placeholder1 }}" />
+        <input type="email" placeholder="{{ currentContact.placeholder2 }}" />
+        <input type="text" placeholder="{{ currentContact.placeholder3 }}" />
+        <input type="text" placeholder="{{ currentContact.placeholder4 }}" />
+        <textarea placeholder="{{ currentContact.placeholder5 }}"></textarea>
+        <button type="submit">{{ currentContact.btn }}</button>
+      </form>
+    </div>
+    <div class="map">
+      <h3 (click)="moveToMap()">{{ currentContact.heading2 }}</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2977.348631036985!2d44.74271877047842!3d41.734572533242904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sge!4v1735922386154!5m2!1sen!2sge"
+        width="550"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <!-- <iframe
+        src="https://maps.google.com/maps?q=WwuyaPcy5DxM8EMJ9&z=15&output=embed"
+        width="100%"
+        height="200"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe> -->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+{
+    "login-en" : [
+        {
+            "heading": "Log in to your account",
+            "emailSubHeading": "Email",
+            "passwordSubHeading": "Password",
+            "forgotPassword": "Forgot password?",
+            "preSignUp": "Don't have an account? ",
+            "signUp": "Sign up",
+            "btn": "Login"
+        }
+    ],
+
+    "login-geo" : [
+        {
+            "heading": "შესვლა თქვენი ანგარიში",
+            "emailSubHeading": "ელ. ფოსტა",
+            "passwordSubHeading": "პაროლი",
+            "forgotPassword": "დაგავიწყდათ პაროლი?",
+            "preSignUp": "არ გაქვთ ანგარიში? ",
+            "signUp": "დარეგისტრირდით",
+            "btn": "შესვლა"
+        }
+    ],
+
+    "login-err-en" : [
+        {
+            "email": "Please enter a valid email address",
+            "password": "Please enter a valid password"
+        }
+    ],
+
+    "login-err-geo" : [
+        {
+            "email": "გთხოვთ შეიყვანოთ სწორი ელ. ფოსტა",
+            "password": "გთხოვთ შეიყვანოთ სწორი პაროლი"
+        }
+    ]
+}

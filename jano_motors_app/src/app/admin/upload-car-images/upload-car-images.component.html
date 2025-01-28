@@ -1,0 +1,38 @@
+<div class="upload-container">
+    <h1>Bulk Upload Documents</h1>
+  
+    <form [formGroup]="uploadForm" (ngSubmit)="uploadFiles()">
+      <label for="car-id">Car ID:</label>
+      <input
+        type="number"
+        id="car-id"
+        formControlName="carId"
+        placeholder="Enter Car ID"
+        required
+      />
+      <div *ngIf="uploadForm.get('carId')?.invalid && uploadForm.get('carId')?.touched" class="error">
+        Please provide a valid Car ID.
+      </div>
+  
+      <div formArrayName="files">
+        <div *ngFor="let fileGroup of filesArray.controls; let i = index" [formGroupName]="i">
+          <label for="file-upload-{{ i }}">Select Document:</label>
+          <input
+            type="file"
+            id="file-upload-{{ i }}"
+            (change)="onFileSelected($event, i)"
+          />
+          <button type="button" (click)="removeFileInput(i)" *ngIf="filesArray.length > 1">Remove</button>
+        </div>
+      </div>
+  
+      <button type="button" (click)="addFileInput()">Add More Files</button>
+      <button type="submit">Upload</button>
+    </form>
+  
+    <div *ngIf="uploadResponse">
+      <h2>Upload Response:</h2>
+      <pre>{{ uploadResponse | json }}</pre>
+    </div>
+  </div>
+  

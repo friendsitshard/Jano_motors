@@ -1,0 +1,25 @@
+{
+    "register-en" : [
+        {
+            "heading": "Create your account",
+            "emailSubHeading": "Email",
+            "passwordSubHeading": "Password",
+            "repeatPasswordSubHeading": "Repeat Password",
+            "preLogin": "Already have an account? ",
+            "Login": "Login",
+            "btn": "Sign Up"
+        }
+    ],
+
+    "register-geo" : [
+        {
+            "heading": "შექმენეთ თქვენი ანგარიში",
+            "emailSubHeading": "ელ. ფოსტა",
+            "passwordSubHeading": "პაროლი",
+            "repeatPasswordSubHeading": "გაიმეორეთ პაროლი",
+            "preLogin": "უკვე გაქვთ ანგარიში? ",
+            "Login": "შესვლა",
+            "btn": "რეგისტრაცია"
+        }
+    ]
+}

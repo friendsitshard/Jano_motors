@@ -1,0 +1,27 @@
+<section class="filter">
+  <img src="Images/filter-bg.png" alt="">
+  <div class="filter-section">
+    <hr class="starter" />
+    <h6>{{filterContent.preHeading}}</h6>
+    <h2 class="title">{{filterContent.heading}}</h2>
+    <form class="filter-form">
+      <div class="custom-select">
+        <select id="car-type" name="carType">
+          <option value="">{{filterContent.filterHeading}}</option>
+          <option value="sedan">Sedan</option>
+          <option value="suv">SUV</option>
+          <option value="hatchback">Hatchback</option>
+        </select>
+      </div>
+      <hr>
+      <div class="form-group">
+        <input type="date" id="pickup-date" name="pickupDate" />
+      </div>
+      <hr>
+      <div class="form-group">
+        <input type="date" id="return-date" name="returnDate" />
+      </div>
+      <button type="submit" class="btn btn-primary">{{filterContent.btn}}</button>
+    </form>
+  </div>
+</section>

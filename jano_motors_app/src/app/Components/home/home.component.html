@@ -1,0 +1,17 @@
+<main>
+    <!-- Slider Section -->
+    <section class="slider">
+        <div class="slider-container">
+          <img src="Images/slider.jpg" alt="Rental Car" class="slider-image" />
+        </div>
+    </section>
+      
+  
+    <!-- About Us Section -->
+    <app-about-us [aboutUsContent]="currentAboutUs"></app-about-us>  
+    <!-- Filter Section -->
+    <app-filter [filterContent]="currentFilter[0]"></app-filter>
+  
+    <!-- Car Types Section -->
+    <app-car-types [carTypesInfo]="currentTypes[0]"></app-car-types>
+</main>

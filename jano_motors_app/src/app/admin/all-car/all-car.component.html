@@ -1,0 +1,30 @@
+<app-admin-header></app-admin-header>
+<table>
+    <thead>
+        <tr>
+            <th>Car ID</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Transmission</th>
+            <th>Passengers</th>
+            <th>Daily Price</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let car of cars">
+            <td>{{ car.id }}</td>
+            <td>{{ car.make }}</td>
+            <td>{{ car.model }}</td>
+            <td>{{ car.year }}</td>
+            <td>{{ car.transmission }}</td>
+            <td>{{ car.passengers }}</td>
+            <td>{{ car.dailyPrice | currency }}</td>
+            <td>
+                <button (click)="onEditCar(car.id)">Edit</button>
+                <button (click)="onDeleteCar(car.id)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

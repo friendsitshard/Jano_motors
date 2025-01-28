@@ -1,0 +1,31 @@
+{
+  "footer-content-en": [
+    {
+      "p": "Explore the road with ease and comfort. Rent your perfect car for any occasion, from everyday drives to special trips. Reliable, affordable, and always ready for you.",
+      "mail": "company@email.com",
+       "address": "Lisi Lake",
+      "navHeading": "Quick Links",
+       "wbs": "Working on website design by "
+    }
+  ],
+
+  "footer-content-geo": [
+    {
+      "p": "აღმოაჩინე გზები მარტივად და კომფორტულად. აირჩიე სრულყოფილი მანქანა ნებისმიერი შემთხვევისთვის — ყოველდღიური მგზავრობიდან განსაკუთრებულ მოგზაურობამდე. სანდო, ხელმისაწვდომი და ყოველთვის მზად შენთვის.",
+      "mail": "company@email.com",
+      "address": "ლისის ტბა",
+      "navHeading": "სწრაფი ნავიგაცია",
+      "wbs": "ვებსაიტის დიზაინზე იმუშავა "
+    }
+  ],
+  "foter_nav_links_en": [
+    { "name": "Home", "url": "/" },
+    { "name": "About", "url": "/about" },
+    { "name": "Cars", "url": "/cars-listing" }
+  ],
+  "foter_nav_links_geo": [
+    { "name": "მთავარი", "url": "/" },
+    { "name": "ჩვენს შესახებ", "url": "/about" },
+    { "name": "მანქანები", "url": "/cars-listing" }
+  ]
+}

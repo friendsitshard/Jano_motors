@@ -1,0 +1,353 @@
+.about-page {
+  background-color: #1c1c1c;
+  color: #ffffff;
+
+  .banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .info-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -5%;
+    padding: 0 8rem;
+    gap: 4rem;
+
+    .card {
+      text-align: center;
+      background: #e63946;
+      padding: 2rem;
+      border-radius: 10px;
+      color: #fff;
+      width: 30%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+      .icon {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 530px) {
+      display: flex;
+      flex-direction: column;
+      margin-inline: auto;
+      padding: 2rem 4rem;
+      gap: 4rem;
+
+      .card {
+        text-align: center;
+        background: #e63946;
+        padding: 1rem;
+        border-radius: 10px;
+        color: #fff;
+        width: 100%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+        .icon {
+          font-size: 1rem;
+          margin-bottom: 0.5rem;
+        }
+
+        h3 {
+          font-size: 0.5rem;
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+
+    .text-content {
+      max-width: 50%;
+
+      h6 {
+        color: #e63946;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+
+        span {
+          color: #e63946;
+        }
+      }
+
+      p {
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+        color: #c1c1c1;
+        max-width: 70%;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin: 5px auto;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+    }
+
+    .car-card {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      height: max-content;
+
+      .content {
+        border-radius: 25px;
+        text-align: center;
+
+        img {
+          width: 100%;
+          border-radius: 25px;
+        }
+
+        h3 {
+          position: absolute;
+          margin-top: 15px;
+          margin-left: 15px;
+          color: #ff4141;
+        }
+      }
+
+      .svg-container {
+        position: absolute;
+        align-self: flex-start;
+        background-color: #2b2b2b;
+        width: fit-content;
+        height: fit-content;
+        margin-top: 10.2%;
+        padding: 6px;
+        border-radius: 0 25px 25px 25px;
+      }
+    }
+
+    @media (max-width: 530px) {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 2rem;
+
+      .text-content {
+        max-width: 100%;
+
+        h6 {
+          color: #e63946;
+          text-align: center;
+        }
+
+        h1 {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+
+          span {
+            color: #e63946;
+          }
+        }
+
+        p {
+          margin-bottom: 1.5rem;
+          font-size: 1rem;
+          color: #c1c1c1;
+          max-width: 100%;
+        }
+
+        ul {
+          list-style: none;
+          padding: 0;
+
+          li {
+            margin: 5px auto;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+          }
+        }
+      }
+
+      .car-card {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: max-content;
+
+        .content {
+          border-radius: 25px;
+          text-align: center;
+
+          img {
+            width: 100%;
+            border-radius: 25px;
+          }
+
+          h3 {
+            position: absolute;
+            margin-top: 15px;
+            margin-left: 15px;
+            color: #ff4141;
+          }
+        }
+
+        .svg-container {
+          position: absolute;
+          align-self: flex-start;
+          background-color: #2b2b2b;
+          width: fit-content;
+          height: fit-content;
+          margin-top: 30.2%;
+          padding: 6px;
+          border-radius: 0 25px 25px 25px;
+        }
+      }
+    }
+  }
+
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+
+    .form,
+    .map {
+      width: 48%;
+    }
+
+    .form {
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        input,
+        textarea,
+        button {
+          padding: 0.8rem;
+          border: none;
+          border-radius: 5px;
+          font-size: 1rem;
+        }
+
+        input {
+          width: 40%;
+          margin: 10px;
+        }
+
+        textarea {
+          width: 100%;
+          height: 150px;
+        }
+
+        button {
+          width: 100%;
+          background: #e63946;
+          color: #fff;
+          cursor: pointer;
+
+          &:hover {
+            background: #d7283a;
+          }
+        }
+      }
+    }
+
+    .map h3 {
+      width: max-content;
+      height: max-content;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 1.5rem;
+      background-color: #e63946;
+      cursor: pointer;
+    }
+
+    .map iframe {
+      border: none;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 530px) {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column-reverse;
+      align-items: center;
+      padding: 1rem;
+
+      .form,
+      .map {
+        width: 88%;
+      }
+
+      .form {
+        form {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1rem;
+
+          input,
+          textarea,
+          button {
+            padding: 0.8rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+          }
+
+          input {
+            width: 100%;
+            margin: 10px;
+          }
+
+          textarea {
+            width: 100%;
+            height: 150px;
+          }
+
+          button {
+            width: 100%;
+            background: #e63946;
+            color: #fff;
+            cursor: pointer;
+
+            &:hover {
+              background: #d7283a;
+            }
+          }
+        }
+      }
+
+      .map iframe {
+        border: none;
+        border-radius: 10px;
+      }
+    }
+  }
+}
